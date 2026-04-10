@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A color Palette" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Pallete</title>
+  </head>
+
+  <body>
+    <div id="main-container">
+      <!-- Color Section -->
+      <h1>Color Generator</h1>
+
+      <button class="generate-btn" id="generate-btn">
+        <i class="fas fa-sync-alt"></i>
+        Generate Colors
+      </button>
+
+      <div id="palette-container">
+        <div class="color-box">
+          <div class="color" style="background-color: #171738"></div>
+          <div class="color-info">
+            <span class="hex-value">#171738</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+        <div class="color-box">
+          <div class="color" style="background-color: #3423a6"></div>
+          <div class="color-info">
+            <span class="hex-value">#3423A6</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+        <div class="color-box">
+          <div class="color" style="background-color: #7180b9"></div>
+          <div class="color-info">
+            <span class="hex-value">#7180B9</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+        <div class="color-box">
+          <div class="color" style="background-color: #2e1760"></div>
+          <div class="color-info">
+            <span class="hex-value">#2E1760</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+        <div class="color-box">
+          <div class="color" style="background-color: #c8c6d7"></div>
+          <div class="color-info">
+            <span class="hex-value">#C8C6D7</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gradient Section -->
+      <h2>Gradient Generator</h2>
+
+      <button class="generate-btn" id="generate-gradient-btn">
+        <i class="fas fa-sync-alt"></i>
+        Generate Gradients
+      </button>
+
+      <div id="gradient-container">
+        <div class="gradient-box">
+          <div
+            class="gradient"
+            style="background: linear-gradient(to right, #171738, #3423a6)"
+          ></div>
+          <div class="color-info">
+            <span class="gradient-value"
+              >linear-gradient(to right, #171738, #3423A6)</span
+            >
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="gradient-box">
+          <div
+            class="gradient"
+            style="background: linear-gradient(135deg, #3423a6, #7180b9)"
+          ></div>
+          <div class="color-info">
+            <span class="gradient-value"
+              >linear-gradient(135deg, #3423A6, #7180B9)</span
+            >
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="gradient-box">
+          <div
+            class="gradient"
+            style="background: linear-gradient(to bottom, #7180b9, #2e1760)"
+          ></div>
+          <div class="color-info">
+            <span class="gradient-value"
+              >linear-gradient(to bottom, #7180B9, #2E1760)</span
+            >
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="gradient-box">
+          <div
+            class="gradient"
+            style="background: linear-gradient(45deg, #2e1760, #c8c6d7)"
+          ></div>
+          <div class="color-info">
+            <span class="gradient-value"
+              >linear-gradient(45deg, #2E1760, #C8C6D7)</span
+            >
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="gradient-box">
+          <div
+            class="gradient"
+            style="background: linear-gradient(to right, #c8c6d7, #171738)"
+          ></div>
+          <div class="color-info">
+            <span class="gradient-value"
+              >linear-gradient(to right, #C8C6D7, #171738)</span
+            >
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- HSL Section -->
+      <h2>HSL Palette</h2>
+
+      <button class="generate-btn" id="generate-hsl-btn">
+        <i class="fas fa-sync-alt"></i>
+        Generate HSL
+      </button>
+
+      <div id="hsl-container">
+        <div class="hsl-box">
+          <div class="hsl-color" style="background: hsl(250, 80%, 20%)"></div>
+          <div class="color-info">
+            <span class="hsl-value">hsl(250, 80%, 20%)</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="hsl-box">
+          <div class="hsl-color" style="background: hsl(250, 80%, 35%)"></div>
+          <div class="color-info">
+            <span class="hsl-value">hsl(250, 80%, 35%)</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="hsl-box">
+          <div class="hsl-color" style="background: hsl(250, 80%, 50%)"></div>
+          <div class="color-info">
+            <span class="hsl-value">hsl(250, 80%, 50%)</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="hsl-box">
+          <div class="hsl-color" style="background: hsl(250, 80%, 65%)"></div>
+          <div class="color-info">
+            <span class="hsl-value">hsl(250, 80%, 65%)</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+
+        <div class="hsl-box">
+          <div class="hsl-color" style="background: hsl(250, 80%, 80%)"></div>
+          <div class="color-info">
+            <span class="hsl-value">hsl(250, 80%, 80%)</span>
+            <i class="far fa-copy copy-btn" title="Copy to clipboard"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
