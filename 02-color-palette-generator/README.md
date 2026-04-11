@@ -10,4 +10,3 @@ While building these projects, I practiced and strengthened the following concep
 - Events (event handling and delegation)
 - Font Awesome (icon integration)
 - navigator.clipboard.writeText() (clipboard / copy-to-clipboard functionality)
-

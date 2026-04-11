@@ -36,22 +36,13 @@ generateBtn.addEventListener("click", updateColorBoxes);
 const gradientBoxes = document.querySelectorAll(".gradient");
 const gradientValues = document.querySelectorAll(".gradient-value");
 const generateGradientBtn = document.getElementById("generate-gradient-btn");
-const directions = [
-  "to right",
-  "to left",
-  "to bottom",
-  "to top",
-  "135deg",
-  "45deg",
-  "225deg",
-  "90deg",
-];
 
 function generateGradient() {
   const c1 = generateHexValue();
   const c2 = generateHexValue();
-  const dir = directions[Math.floor(Math.random() * directions.length)];
-  return `linear-gradient(${dir}, ${c1}, ${c2})`;
+  const angle = Math.floor(Math.random() * 360);
+
+  return `linear-gradient(${angle}deg, ${c1}, ${c2})`;
 }
 
 function updateGradientBoxes() {
@@ -134,3 +125,9 @@ paletteContainer.addEventListener("click", (e) => {
       .catch((err) => console.log("Copy failed:", err));
   }
 });
+
+/* ---- UNCOMMENT THIS FOR DIFFERENT GENERATED PALETTES ON REFRESH ----
+updateColorBoxes();
+updateGradientBoxes();
+generateHslPalette(); 
+*/
