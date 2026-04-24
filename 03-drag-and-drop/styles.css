@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+#container {
+  text-align: center;
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+h1 {
+  margin: 1.5rem 0;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #333333;
+  min-height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2rem 0;
+  box-shadow: 2px 4px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card.over {
+  background-color: navy;
+}
+
+.card h2 {
+  padding: 10px 0;
+  border-radius: 10px 10px 2px 2px;
+}
+
+#card1 h2 {
+  background-color: #3b82f6;
+}
+
+#card2 h2 {
+  background-color: #f59e0b;
+}
+
+#card3 h2 {
+  background-color: #10b981;
+}
+
+.list {
+  margin: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 10px;
+  background-color: rgba(170, 152, 169, 0.4);
+  transition: transform 0.1s ease;
+}
+
+.list:active {
+  cursor: grabbing;
+  transform: scale(0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 769px) {
+  .board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 0 1.5rem;
+  }
+}
