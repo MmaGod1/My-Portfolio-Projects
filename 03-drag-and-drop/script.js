@@ -7,7 +7,9 @@ function dragStart(ev) {
 }
 
 function dragEnd(ev) {
-  //
+  /* ----- get feed back from the console
+   or manipulate the draggable element here
+  */
 }
 
 // ----- DROP ELEMENT FUNCTIO:NS ------
